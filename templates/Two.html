@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Holle ComScience</title>
+<link rel="icon" href="/static/img/LOGO.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%
+    }
+
+    p {
+        line-height: 2
+    }
+
+    .bgimg,
+    .bgimg2 {
+        min-height: 20%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bgimg {
+        background-image: url("/static/img/126-1267598_45-hd-creative-electrical-pictures-full-hd-wallpapers.jpg")
+    }
+    .open-button {
+  cursor: pointer;
+  position: fixed;
+  margin-bottom:4%;
+}
+.open-button2 {
+  cursor: pointer;
+  position: fixed;
+  margin-bottom:7%;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 50;
+}
+</style>
+
+<body>
+
+    <!-- Header / Home-->
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo"></h1>
+            <h1></h1>
+            <h1><br><b>Two's Complement</h1>
+        </div>
+    </header>
+
+    <!-- Navbar (sticky bottom) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-black w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="./Booth" style="width:20%;" class="w3-bar-item w3-button"><b>Booth's Algorithm</a>
+            <a href="./Base" style="width:20%" class="w3-bar-item w3-button">Base Converter</a>
+            <a href="./Fix" style="width:20%" class="w3-bar-item w3-button">Infix Postfix Prefix</a>
+            <a href="./Two" style="width:20%" class="w3-bar-item w3-button">Two's Complement</a>
+            <a href="./Contact" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Contact<b></a>
+        </div>
+    </div>
+    <div class="w3-content w3-margin-top" style="max-width:80%;">
+        <div class="w3-third">
+            <form class="w3-white w3-text-grey w3-card-4" action="./Tworesult" style="width:95%" method="POST">
+                <div class="w3-row-padding">
+                    <h2 class="w3-text-blue">Input Number</h2>
+                    <p>
+                        <input class="w3-input w3-border" name="Two" type="text" placeholder="Number"></p>
+                    <p>
+                        <button class="w3-btn w3-blue">Enter</button></p>
+                </div>
+                <h2 class="w3-text-blue"style="padding:2%">Result</h2>
+                <div class="w3-container">
+                    <div class="w3-panel w3-pale-white w3-leftbar w3-rightbar w3-border-black">
+                        <h>{{Dec}}</h>
+                    </div>
+                  </div>
+                  <div class="w3-container">
+                    <div class="w3-panel w3-pale-white w3-leftbar w3-rightbar w3-border-black">
+                        <h>{{Bin}}</h>
+                    </div>
+                  </div>
+            </form>
+        </div>
+        <div class="w3-twothird">
+            <div class="w3-container w3-card-4 w3-white" style="margin-bottom:7% ;">
+                <h2 class="w3-text-grey w3-padding-0"><i
+                        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Two's Complement</h2>
+                <div class="w3-container">
+                    <p>
+                        <p style="font-family: Raleway, sans-serif">The two's complement of an N-bit number is defined as its complement with respect to 2N. For instance, for the three-bit number 010, the two's complement is 110, because 010 + 110 = 1000. The two's complement is calculated by inverting the digits and adding one.
+                            Two's complement is the most common method of representing signed integers on computers,[1] and more generally, fixed point binary values. In this scheme, if the binary number 0102 encodes the signed integer 210, then its two's complement, 1102, encodes the inverse: −210. In other words, to reverse the sign of most integers (all but one) in this scheme, you can take the two's complement of its binary representation.[2] The tables at right illustrate this property.
+
+Compared to other systems for representing signed numbers (e.g., ones' complement), two's complement has the advantage that the fundamental arithmetic operations of addition, subtraction, and multiplication are identical to those for unsigned binary numbers (as long as the inputs are represented in the same number of bits - as the output, and any overflow beyond those bits is discarded from the result). This property makes the system simpler to implement, especially for higher-precision arithmetic. Unlike ones' complement systems, two's complement has no representation for negative zero, and thus does not suffer from its associated difficulties.
+
+                    </p>
+                    <img src="/static/img/Two.PNG" alt="HTML5 Icon" style="width:50%;"><img src="/static/img/Two1.PNG" alt="HTML5 Icon" style="width:50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w3-center w3-black w3-padding-10 w3-bottom" >
+        <p>Powered by <a href="https://www.facebook.com/ComputerScienceUBU/" title="W3.CSS" target="_blank"
+                class="w3-hover-text-blue">ComScience UBU</a></p>
+    </footer>
+    <button class="w3-display-bottomright w3-round-xxlarge open-button" onclick="open1()" > <img src="/static/img/discord.png"width="40px"></button>
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container w3-display-container">
+          <iframe src="https://discordapp.com/widget?id=672312310387310612&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0"></iframe>
+         <button type="button" class="w3-display-topright material-icons w3-button w3-Deep Purple" onclick="close1()"style ="font-size:10px;padding:1px 1px;margin:5% 5%">close</button>
+          
+        </form>
+      </div>
+      <script>
+          function open1() {   
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function close1() {
+            document.getElementById("myForm").style.display = "none";
+          }
+  </script>
+      <button class="w3-display-bottomright w3-round-xxlarge open-button2" onclick="openForm()" > <img src="/static/img/LOL.png"width="40px"></button>
+  
+      <div class="chat-popup" id="Girl">
+        <form action="/action_page.php" class="form-container w3-display-container">
+          <iframe width="100%" height="500" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/808f9882-adde-4924-b8fb-0f22e0e7a144"></iframe>
+         <button type="button" class="w3-display-topright material-icons w3-button w3-Deep Purple" onclick="closeForm()"style ="font-size:10px;padding:1px 1px;margin:5% 5%">close</button>
+        </form>
+      </div>   
+      <script>
+          function openForm() {   
+            document.getElementById("Girl").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("Girl").style.display = "none";
+          }
+  </script>
+</body>
+
+</html>

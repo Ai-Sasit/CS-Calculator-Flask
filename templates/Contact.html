@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>Holle ComScience</title>
+<link rel="icon" href="/static/img/LOGO.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%
+    }
+
+    p {
+        line-height: 2
+    }
+
+    .bgimg,
+    .bgimg2 {
+        min-height: 20%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bgimg {
+        background-image: url("/static/img/126-1267598_45-hd-creative-electrical-pictures-full-hd-wallpapers.jpg")
+    }
+    .open-button {
+  cursor: pointer;
+  position: fixed;
+  margin-bottom:4%;
+}
+.open-button2 {
+  cursor: pointer;
+  position: fixed;
+  margin-bottom:7%;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 50;
+}
+</style>
+
+<body>
+
+    <!-- Header / Home-->
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo"></h1>
+            <h1></h1>
+            <h1><br><b>Contact</h1>
+        </div>
+    </header>
+
+    <!-- Navbar (sticky bottom) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-black w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="./Booth" style="width:20%;" class="w3-bar-item w3-button"><b>Booth's Algorithm</a>
+            <a href="./Base" style="width:20%" class="w3-bar-item w3-button">Base Converter</a>
+            <a href="./Fix" style="width:20%" class="w3-bar-item w3-button">Infix Postfix Prefix</a>
+            <a href="./Two" style="width:20%" class="w3-bar-item w3-button">Two's Complement</a>
+            <a href="./Contact" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Contact<b></a>
+        </div>
+    </div>
+    <div class="w3-content w3-margin-top" style="max-width:90%;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-quarter w3-row-padding">
+                <!-- AI Contact -->
+                <div class="w3-white w3-text-grey w3-card-4 " style=" margin-bottom:20% ;margin-top:10%;">
+                    <div class="w3-display-container">
+                        <img src="/static/img/AI.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2><b>Sasit AI</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Address: Burirum, Thailand</p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>Gmail: Sasit.wi.62@ubu.ac.th
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>Call: 096-393-5294</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+                        <p>Python Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">90%</div>
+                        </div>
+                        <p>Java Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:75%">
+                                <div class="w3-center w3-text-white">75%</div>
+                            </div>
+                        </div>
+                        <p>Video Editor</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+                        </div>
+                        <p>Back-End Developer</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%;">60%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+            </div>
+            <!-- Pond Contact -->
+            <div class="w3-quarter w3-row-padding">
+
+                <div class="w3-white w3-text-grey w3-card-4" style=" margin-bottom:20% ;margin-top:50% ;">
+                    <div class="w3-display-container">
+                        <img src="/static/img/pond.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2><b>Pond Tanapan</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer
+                        </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Address: Srisaket, Thailand
+                        </p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>Gmail: Pondxlx@gmail.com
+                        </p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>Facebook: Pond Tanapan
+                    </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>Call: 098-581-7324</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+                        <p>Python Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-pink" style="width:75%">75%</div>
+                        </div>
+                        <p>Java Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-pink" style="width:70%">
+                                <div class="w3-center w3-text-white">70%</div>
+                            </div>
+                        </div>
+                        <p>Video Editor</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-pink" style="width:65%">65%</div>
+                        </div>
+                        <p>Front-End Developer</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-pink" style="width:75%;">75%
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+            </div>
+            <!-- เหนือ Contact -->
+            <div class="w3-quarter w3-row-padding">
+
+                <div class="w3-white w3-text-grey w3-card-4" style=" margin-bottom:20% ;margin-top:20%">
+                    <div class="w3-display-container">
+                        <img src="/static/img/nern.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2><b>N'Pratčhaya Anan</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Information query
+                        </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Address: Srisaket, Thailand
+                        </p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>Gmail: Srisantisang2515@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>Call: 096-912-8748</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+                        <p>Python Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:60%">60%</div>
+                        </div>
+                        <p>Java Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:30%">
+                                <div class="w3-center w3-text-white">30%</div>
+                            </div>
+                        </div>
+                        <p>Media</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:50%">50%</div>
+                        </div>
+                        <p>Photo</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:60%;">60%
+                            </div>
+                        </div>
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Languages</b></p>
+                        <p>Thai</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">80%</div>
+                        </div>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:40%">40%</div>
+                        </div>
+                        <p>Loas</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:60%">60%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+            </div>
+            <!-- Ger Contact -->
+            <div class="w3-quarter w3-row-padding">
+
+                <div class="w3-white w3-text-grey w3-card-4" style=" margin-bottom:20% ;margin-top:75%">
+                    <div class="w3-display-container">
+                        <img src="/static/img/ger.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2 style="color: #000;"><b>Sathian Phasadee</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Designer
+                        </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Address: Ubon Ratchathani , Thailand
+                        </p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>Gmail: sataen34140@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>Call: 084-581-7110</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+                        <p>Python Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:50%">50%</div>
+                        </div>
+                        <p>Java Language</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:20%">
+                                <div class="w3-center w3-text-white">20%</div>
+                            </div>
+                        </div>
+                        <p>Video Editor</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:70%">70%</div>
+                        </div>
+                        <p>Designer</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:50%;">50%
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="w3-center w3-black w3-padding-10 w3-bottom">
+        <p>Powered by <a href="https://www.facebook.com/ComputerScienceUBU/" title="W3.CSS" target="_blank"
+                class="w3-hover-text-blue">ComScience UBU</a></p>
+    </footer>
+    <button class="w3-display-bottomright w3-round-xxlarge open-button" onclick="open1()" > <img src="/static/img/discord.png"width="40px"></button>
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container w3-display-container">
+          <iframe src="https://discordapp.com/widget?id=672312310387310612&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0"></iframe>
+         <button type="button" class="w3-display-topright material-icons w3-button w3-Deep Purple" onclick="close1()"style ="font-size:10px;padding:1px 1px;margin:5% 5%">close</button>
+          
+        </form>
+      </div>
+      <script>
+          function open1() {   
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function close1() {
+            document.getElementById("myForm").style.display = "none";
+          }
+  </script>
+      <button class="w3-display-bottomright w3-round-xxlarge open-button2" onclick="openForm()" > <img src="/static/img/LOL.png"width="40px"></button>
+  
+      <div class="chat-popup" id="Girl">
+        <form action="/action_page.php" class="form-container w3-display-container">
+          <iframe width="100%" height="500" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/808f9882-adde-4924-b8fb-0f22e0e7a144"></iframe>
+         <button type="button" class="w3-display-topright material-icons w3-button w3-Deep Purple" onclick="closeForm()"style ="font-size:10px;padding:1px 1px;margin:5% 5%">close</button>
+        </form>
+      </div>   
+      <script>
+          function openForm() {   
+            document.getElementById("Girl").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("Girl").style.display = "none";
+          }
+  </script>
+</body>
+
+</html>
